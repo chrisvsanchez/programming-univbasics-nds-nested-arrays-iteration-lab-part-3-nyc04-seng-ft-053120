@@ -25,7 +25,7 @@ def join_nested_strings(src)
    while element_index < src[row_index].count do
      element_index += 1
    end
-   new_string << src[row_index].grep(String).join(" ")
+   new_string += src[row_index].grep(String).join(" ")
    row_index += 1
  end
 #src.flatten.grep(String).join(' ')
